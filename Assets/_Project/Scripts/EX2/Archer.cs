@@ -6,7 +6,7 @@ public class Archer : Character
 {
     public Archer(string nome, int vita) : base(nome, vita) { }
 
-    public override void Attack(Character target)
+    public override void Attack(Character target) // Override di Attack: due frecce separate, con log per ogni freccia
     {
         int danno = 7;
         for (int i = 1; i <= 2; i++)

@@ -22,6 +22,7 @@ public class RPGManager : MonoBehaviour
 
             // Il personaggio attacca un altro personaggio casuale nella lista (diverso da sé)
             Character target = c;
+            
             while (target == c)  // Assicuro che non si attacchi da solo
             {
                 target = characters[Random.Range(0, characters.Count)];
